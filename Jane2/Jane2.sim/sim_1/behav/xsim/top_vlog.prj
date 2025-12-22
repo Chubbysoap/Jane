@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" \
+"../../../../Jane2.srcs/sources_1/new/lengFind.v" \
+"../../../../Jane2.srcs/sources_1/new/minMaxAdj.v" \
+"../../../../Jane2.srcs/sources_1/new/invalidFinder.v" \
+"../../../../Jane2.srcs/sources_1/new/invalidCntr.v" \
+"../../../../Jane2.srcs/sim_1/new/tb_invalidFinder.v" \
+"../../../../Jane2.srcs/sim_1/new/tb_minMaxAdj.v" \
+"../../../../Jane2.srcs/sim_1/new/tb_lenFind.v" \
+"../../../../Jane2.srcs/sim_1/new/top.v" \
+"../../../../Jane2.srcs/sim_1/new/tb_invalidCntr.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
